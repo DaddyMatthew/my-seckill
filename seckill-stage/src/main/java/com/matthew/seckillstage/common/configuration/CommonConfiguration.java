@@ -1,4 +1,4 @@
-package com.matthew.seckillstage.common;
+package com.matthew.seckillstage.common.configuration;
 
 import com.matthew.seckillstage.common.redis.RedisConfig;
 import org.springframework.beans.factory.annotation.Autowired;

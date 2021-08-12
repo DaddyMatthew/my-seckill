@@ -1,4 +1,4 @@
-package com.matthew.seckillstage.configuration.redis;
+package com.matthew.seckillstage.common.redis;
 
 public interface KeyPrefix {
     public int expiredSeconds();

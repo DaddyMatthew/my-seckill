@@ -12,8 +12,8 @@ public class Result<T> {
         return new Result<T>(data);
     }
 
-    public static <T> Result<T> error(CodeMsg codeMsg) {
-        return new Result<T>(codeMsg);
+    public static <T> Result<T> error(CodeMessage codeMessage) {
+        return new Result<T>(codeMessage);
     }
 
     private Result(T data) {
@@ -25,10 +25,10 @@ public class Result<T> {
         this.msg = msg;
     }
 
-    private Result(CodeMsg codeMsg) {
-        if (codeMsg != null) {
-            this.code = codeMsg.getCode();
-            this.msg = codeMsg.getMsg();
+    private Result(CodeMessage codeMessage) {
+        if (codeMessage != null) {
+            this.code = codeMessage.getCode();
+            this.msg = codeMessage.getMsg();
         }
     }
 }

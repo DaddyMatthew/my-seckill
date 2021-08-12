@@ -1,4 +1,4 @@
-package com.matthew.seckillstage.configuration.redis;
+package com.matthew.seckillstage.common.redis;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

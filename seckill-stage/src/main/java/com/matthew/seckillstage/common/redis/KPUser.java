@@ -1,4 +1,4 @@
-package com.matthew.seckillstage.configuration.redis;
+package com.matthew.seckillstage.common.redis;
 
 public class KPUser extends AbstractKeyPrefix {
 

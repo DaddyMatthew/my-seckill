@@ -1,7 +1,19 @@
-package com.matthew.seckillstage.common;
+package com.matthew.seckillstage.common.exception;
 
-public class GlobalException extends RuntimeException{
-    public GlobalException(String message) {
-        super(message);
+import com.matthew.seckillstage.common.CodeMessage;
+
+public class ApplicationException extends RuntimeException {
+
+    private static final long serialVersionUID = 1L;
+
+    private CodeMessage codeMessage;
+
+    public ApplicationException(CodeMessage codeMessage) {
+        super(codeMessage.toString());
+        this.codeMessage = codeMessage;
+    }
+
+    public CodeMessage getCodeMessage() {
+        return codeMessage;
     }
 }

@@ -1,4 +1,4 @@
-package com.matthew.seckillstage.common;
+package com.matthew.seckillstage.common.util;
 
 import org.apache.commons.codec.digest.DigestUtils;
 

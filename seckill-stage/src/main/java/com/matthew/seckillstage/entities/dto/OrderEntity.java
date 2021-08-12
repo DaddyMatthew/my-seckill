@@ -1,4 +1,4 @@
-package com.matthew.seckillstage.entities.po;
+package com.matthew.seckillstage.entities.dto;
 
 import lombok.Data;
 

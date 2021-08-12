@@ -1,14 +1,13 @@
 package com.matthew.seckillstage.common.redis;
 
-public class KPUser extends AbstractKeyPrefix {
+public class KPSeckillUser extends AbstractKeyPrefix {
 
-    public static final int TOKEN_EXPIRE = 3600 * 24 * 2;
+    private static final int TOKEN_EXPIRE = 3600 * 24 * 2;
 
-    public KPUser(String prefix) {
-        super(prefix);
+    public KPSeckillUser(int expiredSeconds, String prefix) {
+        super(expiredSeconds, prefix);
     }
 
-    public static KPUser token = new KPUser("tk");
-    public static KPUser getById = new KPUser("id");
-    public static KPUser getByName = new KPUser("name");
+    public static KPSeckillUser token = new KPSeckillUser(TOKEN_EXPIRE, "tk");
+    public static KPSeckillUser getById = new KPSeckillUser(0, "id");
 }

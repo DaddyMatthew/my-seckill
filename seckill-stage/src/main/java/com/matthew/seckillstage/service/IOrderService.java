@@ -1,9 +1,9 @@
 package com.matthew.seckillstage.service;
 
-import com.matthew.seckillstage.entities.OrderEntity;
+import com.matthew.seckillstage.entities.dto.OrderEntity;
 
-public interface OrderService {
+public interface IOrderService {
     OrderEntity queryOrder(int id);
 
-    OrderEntity addOrder(OrderEntity order);
+    void addOrder(OrderEntity order);
 }

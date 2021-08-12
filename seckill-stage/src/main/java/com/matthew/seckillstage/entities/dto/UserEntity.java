@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class UserDto {
+public class UserEntity {
     private int id;
     private String mobile;
     private String nickname;
